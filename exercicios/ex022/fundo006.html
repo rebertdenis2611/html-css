@@ -7,22 +7,26 @@
     <title>Document</title>
     <style>
         body{
-            height: 100vh;
+            position: relative;
+            height: 97vh;
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-size: cover;
-
         }
 
         main{
+            position: absolute;
             background-color: white;
             width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
