@@ -68,11 +68,11 @@ section.normal{
 }
 
 section.imagem{
-    background-size: cover;
     background-position: right center;
-    box-shadow: inset 6px 6px 6px 0px rgba(0, 0, 0, 0.452);
+    background-size: cover;
     background-attachment: fixed;
-
+    box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.404);
+    background-repeat: no-repeat;
 }
 
 section.imagem > p{
