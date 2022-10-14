@@ -4,56 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uso de tabela Grande</title>
+    <title>Tabelas Formais</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
         table{
-            width: 500px;
             border-collapse: collapse;
+            width: 700px;
         }
 
-        thead, tfoot{
+        th{
             background-color: gray;
             color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.5em;
         }
 
-        td, th{
+        td,th{
             border: 1px solid black;
             padding: 10px;
+            text-align: center;
+        }
+
+        .nome::after{
+            content: " :";
         }
     </style>
 </head>
 <body>
-    <h1>Uso de tabela Grande</h1>
+    <h1>Nome de pessoas / cidades e idade</h1>
     <table>
         <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
-            </tr>
+            <th>Nome</th>
+            <th>Cidade</th>
+            <th>Idade</th>
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td>
-                <td>45.919,049</td>
+                <td class="nome">Rebert</td>
+                <td>Camaragibe</td>
+                <td>27</td>
             </tr>
             <tr>
-                <td>Minas Gerais</td>
-                <td>21.168,791</td>
+                <td class="nome">Ana Karoline</td>
+                <td>Camaragibe</td>
+                <td>22</td>
             </tr>
             <tr>
-                <td>Rio de Janeiro</td>
-                <td>17.264,943</td>
+                <td class="nome">Maria Alice</td>
+                <td>Camaragibe</td>
+                <td>0.2</td>
             </tr>
         </tbody>
         <tfoot>
-            <tr>
-                <th>Total de Habitantes</td>
-                <td>215.454,56</td>
-            </tr>
+            <th>Total</th>
+            <td>Camargibe</td>
+            <td>000</td>
         </tfoot>
     </table>
 </body>
