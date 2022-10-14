@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Formais</title>
     <style>
-        table{
+        .semantica{
             border-collapse: collapse;
             width: 700px;
+        }
+
+        .semsemantica{
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        td:hover{
+            background-color: red;
+            color: white;
         }
 
         th{
@@ -30,8 +40,8 @@
     </style>
 </head>
 <body>
-    <h1>Nome de pessoas / cidades e idade</h1>
-    <table>
+    <h1>Tabelas com Semanticas</h1>
+    <table class="semantica">
         <thead>
             <th>Nome</th>
             <th>Cidade</th>
@@ -59,6 +69,22 @@
             <td>Camargibe</td>
             <td>000</td>
         </tfoot>
+    </table>
+
+    <h1>Tabelas sem Semanticas</h1>
+    <table class="semsemantica">
+        <tr>
+            <td>Rebert</td>
+            <td>Denis</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Karoline</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Alice</td>
+        </tr>
     </table>
 </body>
 </html>
