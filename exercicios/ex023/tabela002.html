@@ -9,6 +9,7 @@
         table{
             border-collapse: collapse;
             width: 600px;
+            position: relative;
         }
 
         th{
@@ -33,6 +34,12 @@
             color: white;
         }
 
+        thead > tr> th{
+            position: sticky;
+            top: 0;
+
+        }
+
         tbody > tr:nth-child(even) {
             background-color: lightgray;
         }
@@ -47,9 +54,11 @@
     <table>
         <caption><strong>Unidades Federativas e população</strong></caption>
         <thead>
-            <th scope="col" style="width: 10px;">Posição</th>
-            <th scope="col">Unidade Federativa</th>
-            <th scope="col" style="width: 80px;">População 2021</th>
+            <tr>
+                <th scope="col" style="width: 10px;">Posição</th>
+                <th scope="col" >Unidade Federativa</th>
+                <th scope="col" style="width: 80px;">População 2021</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
