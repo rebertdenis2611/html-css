@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Tabela</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .cnome{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Rebert</td>
+            <td>M</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>Karol</td>
+            <td>F</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Maria Alice</td>
+            <td>F</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Fict</td>
+            <td>F</td>
+            <td>38</td>
+        </tr>
+    </table>
+</body>
+</html>
