@@ -4,56 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Tabela</title>
+    <title>Tabela de cadastro</title>
     <style>
         table{
             border-collapse: collapse;
-            width: 300px;
+            width: 600px;
         }
-        td, th{
+        th, td{
             border: 1px solid black;
             padding: 10px;
+            color: white;
+            font-weight: bolder;
         }
 
-        .cnome{
-            background-color: yellow;
+        .cred{
+            background-color: red;
+        }
+
+        .cblue{
+            background-color: blue;
         }
     </style>
 </head>
 <body>
-    <h1>Table</h1>
+    
+    <h1>Cadastro de minha casa</h1>
     <table>
         <colgroup>
-            <col class="cnome">
-            <col class="csexo">
-            <col class="cidade">
+            <col class="cblue" span="2">
+            <col class="cred" span="2">
         </colgroup>
-
-        <caption>Cadastro</caption>
         <tr>
-            <th>Nome</th>
-            <th>Sexo</th>
-            <th>Idade</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Cidade</th>
         </tr>
         <tr>
             <td>Rebert</td>
-            <td>M</td>
             <td>27</td>
+            <td>M</td>
+            <td>Camaragibe</td>
         </tr>
         <tr>
-            <td>Karol</td>
-            <td>F</td>
+            <td>Karoline</td>
             <td>22</td>
+            <td>F</td>
+            <td>Camaragibe</td>
         </tr>
         <tr>
             <td>Maria Alice</td>
+            <td>0.2</td>
             <td>F</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>Fict</td>
-            <td>F</td>
-            <td>38</td>
+            <td>Camaragibe</td>
         </tr>
     </table>
 </body>
