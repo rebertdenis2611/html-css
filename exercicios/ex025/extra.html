@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAC</title>
+</head>
+<body>
+    <h1>Abertura de Chamado</h1>
+    <form action="sac.javascript" method="post">
+        <p>
+            <label for="icnpj">Cnpj: </label>
+            <input type="text" name="cnpj" id="icnpj" required maxlength="13">
+        </p>
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required>
+        </p>
+        <p>
+            <label for="ifone">Telefone: </label>
+            <input type="tel" name="fone" id="ifone" required placeholder="Ex: 81 9 9999 9999">
+        </p>
+
+        <fieldset>
+            <legend>Chamado</legend>
+            <p>
+                <label for="">Motivo</label> <br>
+            
+                <input type="radio" name="motivo" id="iinstall">
+                <label for="iinstall">Instalaçao</label>
+                <input type="radio" name="motivo" id="ireabertura">
+                <label for="ireabertura">Reabertura</label>
+            </p>
+            <p>
+                <label for="imodulo">Modulo:</label>
+                <select name="modulo" id="imodulo">
+                    <option value="PDV">PDV</option>
+                    <option value="Retaguarda">Retaguarda</option>
+                    <option value="Central">Central</option>
+                </select>
+            </p>
+            <p>
+                <label for="iref">Referencia</label>
+                <select name="referencia" id="iref">
+                    <optgroup label="PDV">
+                        <option value="pinpad">Pinpad</option>
+                        <option value="impressora">Impressora</option>
+                        <option value="balanca">Balança</option>
+                    </optgroup>
+
+                    <optgroup label="Retaguarda">
+                        <option value="">Entrada de nota</option>
+                        <option value="">Emissão de NFe</option>
+                        <option value="">Cadastros</option>
+                    </optgroup>
+                </select>
+            </p>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Acesso Remoto</legend>
+            <p>
+                <label for="iacesso">ID: </label>
+                <input type="text" name="acesso" id="iacesso">
+            </p>
+            <p>
+                <input type="radio" name="acesso" id="ianydesk">
+                <label for="ianydesk">Anydesk</label>
+                
+                <input type="radio" name="acesso" id="iteamviewer">
+                <label for="iteamviewer">TeamViewer</label>
+            </p>
+        </fieldset>
+        
+        <p>
+            <label for="imsg">Problema: </label>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Descreva o problema aqui: "></textarea>
+        </p>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
